@@ -3,25 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Layout with Sidebar</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="app.js" defer></script>
+    <script src="app.js"></script>
 </head>
 <body>
-    <div class ="top" style=" border: 60px solid rgb(100, 66, 126); height: 100%;margin:0%;">
-        <font color ="white";><p> <b>MENU</b></p> </font>
-        
+    <header class="top">
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label class="burger" for="burger-checkbox"></label>
+        <ul class="menu-list">
+            <li><a href="#" class="menu-item">Главная</a><li>
+            <li><a href="#" class="menu-item">О нас</a><li>
+            <li><a href="#" class="menu-item">Команда</a><li>
+            <li><a href="#" class="menu-item">Контакты</a><li>
+        </ul>
+        <nav>
+            MENU
+        </nav>
+    </header>
+
+    <div class="container">
+        <aside class="left_block">
+            <nav>
+                <ul>
+                    <li>Главная</li>
+                    <li>О нас</li>
+                    <li>Команда</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <section class="center center_1">1</section>
+        </main>
+        <main class="content">
+            <section class="center center_2">2</section>
+        </main>
     </div>
-    
-   
-    
-   
-        <div class="right" style ="border: 60px solid rgb(214, 251, 8); height: 100%;margin:0%;">
-        <font color ="brown"><p><b>TEXT</b></p></font>
-        
-        </div>
-    <div class="centre1" style ="border: 10px solid rgb(238, 123, 56); height: 60px;margin:0%;">
-    <p>cencen</p>
-    </div>
+
 </body>
 </html>
