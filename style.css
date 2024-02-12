@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: Arial, sans-serif;
 }
@@ -159,4 +160,52 @@ nav{
     .top{
         justify-content: flex-start;
     }
+  .sidebar {
+        display: none;
+    }
 }
+
+
+p {
+    font-size: 50px;
+}
+
+
+.main {
+    display: flex;
+    gap: 50px;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.container-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100dvw;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:blueviolet;
+}
+
+.side-container {
+    position:absolute;
+    right: 0;
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+	flex-direction: row-reverse;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+
+
