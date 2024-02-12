@@ -3,12 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css" />
-    <title>Document</title>
-</head>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Sidebar</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js"></script>
+
+</head>
+-
 <body>
-    <div class="main">   
+
+                      <div class="main">   
         <div class="side-container">
             <div class="sidebar">
                 <p>
@@ -16,13 +21,39 @@
                 </p>
             </div>
         </div>
+    <header class="top">
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label class="burger" for="burger-checkbox"></label>
+        <ul class="menu-list">
+            <li><a href="#" class="menu-item">Главная</a><li>
+            <li><a href="#" class="menu-item">О нас</a><li>
+            <li><a href="#" class="menu-item">Команда</a><li>
+            <li><a href="#" class="menu-item">Контакты</a><li>
+        </ul>
+        <nav>
+            MENU
+        </nav>
+    </header>
 
-        <div class="container1">
-            <div class="square square1">1</div>
-            <div class="square square2">2</div>
-        </div>
+    <div class="container">
+        <aside class="left_block">
+            <nav>
+                <ul>
+                    <li>Главная</li>
+                    <li>О нас</li>
+                    <li>Команда</li>
+                    <li>Контакты</li>
+                </ul>
+            </nav>
+        </aside>
 
-        <div class="container-footer">
+        <main class="content">
+            <section class="center center_1">1</section>
+        </main>
+        <main class="content">
+            <section class="center center_2">2</section>
+        </main>
+      <div class="container-footer">
             <div class="footer">
                 <p>
                     footer
@@ -31,6 +62,7 @@
         </div>
 
     </div>
+
 </body>
 
 </html>
